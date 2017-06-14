@@ -7,6 +7,10 @@
   "ContactGroup": "StatusCake Alerts",
   "ContactID": 536,
   "Status": "Up",
+  "Tags": [
+    "tag1",
+    "tag2"
+  ],
   "Uptime": 0,
   "CheckRate": 60,
   "Timeout": 40,

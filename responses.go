@@ -26,6 +26,7 @@ type detailResponse struct {
 	URI             string   `json:"URI"`
 	ContactID       int      `json:"ContactID"`
 	Status          string   `json:"Status"`
+	Tags            []string `json:"Tags"`
 	Uptime          float64  `json:"Uptime"`
 	CustomHeader    string   `json:"CustomHeader"`
 	CheckRate       int      `json:"CheckRate"`
@@ -58,6 +59,7 @@ func (d *detailResponse) test() *Test {
 		CustomHeader:  d.CustomHeader,
 		ContactID:     d.ContactID,
 		Status:        d.Status,
+		TestTags:      d.Tags,
 		Uptime:        d.Uptime,
 		CheckRate:     d.CheckRate,
 		Timeout:       d.Timeout,
